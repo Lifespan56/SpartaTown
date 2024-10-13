@@ -1,24 +1,25 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//입력만 받는 클래스
 public class PlayerInput : MonoBehaviour
 {
     private Controller controller;
-
-    private void Start()
+    
+    private void Awake()
     {
         controller = GetComponent<Controller>();
     }
-    //플레이어 입력만 받는 클래스
+    
     public void OnMove(InputValue input)
     {
-        Debug.Log(input.Get<Vector2>().ToString());
         controller.CalcMove(input.Get<Vector2>().normalized);
     }
 
     public void OnLook(InputValue input)
     {
-        controller.CalcLook(input.Get<Vector2>().normalized);
+        //.normalized로 보내면 안됨 ScreenToWorldPoint()시에 normalized아닌 값이 필요함
+        controller.CalcLook(input.Get<Vector2>());
     }
 
 }

@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: CharaterBaseSO
   m_EditorClassIdentifier: 
   speed: 10
+  s2: 5
+  s3: 2
