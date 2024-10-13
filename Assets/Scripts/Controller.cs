@@ -6,10 +6,12 @@
 public class Controller : MonoBehaviour
 {
     private Rigidbody2D rigid2D;
-
+    private float speed;
+    [SerializeField] CharactersSO chaSO;
     private void Start()
     {
         rigid2D = GetComponent<Rigidbody2D>();
+        speed = chaSO.speed;
     }
 
     public void CalcMove(Vector2 vector2)
@@ -19,7 +21,7 @@ public class Controller : MonoBehaviour
 
     public void Move(Vector2 moveDirection)
     {
-        rigid2D.velocity = moveDirection * 5;
+        rigid2D.velocity = moveDirection * speed;
     }
 
     public void CalcLook(Vector2 vector2)
