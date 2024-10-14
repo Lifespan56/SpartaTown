@@ -9,7 +9,7 @@ public class ButtonBehavior : MonoBehaviour
     {
         ButtonManager.BtnInstance.ChoicePhase(this.gameObject);
     }
-    public void CancelChoice()
+    public void CancelChoice()//ют╥б╨н
     {
         ButtonManager.BtnInstance.ResetPhase();
     }
