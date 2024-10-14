@@ -1176,7 +1176,7 @@ MonoBehaviour:
   - {fileID: 8259527530151022992, guid: 10a24da3234f04e4bad62e79870bcc0d, type: 3}
   - {fileID: 4090641098156140616, guid: 5c08d0c459143c54cb5903d62676ce92, type: 3}
   ChooseButtons: {fileID: 155565008}
-  NowSelectBtn: {fileID: 1733484048}
+  NowSelectImage: {fileID: 1733484048}
   EnterBtn: {fileID: 355213635}
   NameInputTxt: {fileID: 1812200423}
 --- !u!4 &720657962
@@ -1446,7 +1446,7 @@ GameObject:
   - component: {fileID: 1733484051}
   - component: {fileID: 1733484050}
   m_Layer: 5
-  m_Name: NowSelectBtn
+  m_Name: NowSelectImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

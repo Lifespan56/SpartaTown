@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-//델리게이트+=출력()
-//출력부cs in 델리,출력()
-//입력부cs input값을 델리(매개)
+
 public class Controller : MonoBehaviour
 {
     private Rigidbody2D rigid2D;
